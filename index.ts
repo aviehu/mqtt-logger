@@ -40,7 +40,7 @@ client.on("error", (error) => {
     console.log(error)
 });
 
-client.subscribe('+/+/+/+/+/+/+/+/+/+/+/+')
+client.subscribe('+/#')
 
 client.on('message',(topic, payload) => {
     logger.info({topic, message: payload.toString()})
