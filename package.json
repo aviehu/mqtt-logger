@@ -5,8 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc tsconfig.json && node dist/index.js",
-    "build": "tsc tsconfig.json"
+    "start": "npx tsc && node dist/index.js",
+    "build": "npx tsc"
   },
   "author": "",
   "license": "ISC",
