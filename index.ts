@@ -43,6 +43,9 @@ client.on("error", (error) => {
 client.subscribe('+/#')
 
 client.on('message',(topic, payload) => {
+    if(topic === 'HI') {
+        return
+    }
     logger.info({topic, message: payload.toString()})
 })
 
